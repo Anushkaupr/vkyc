@@ -17,7 +17,6 @@ export default function PreparationPage() {
     <div className="preparation-page">
       <div className="preparation-card">
 
-        {/* HEADER */}
         <header className="preparation-header">
 
           {/* BANK LOGO */}
@@ -29,8 +28,7 @@ export default function PreparationPage() {
             />
           </div>
 
-          {/* LANGUAGE */}
-          <div className="preparation-language">
+<div className="preparation-language">
             <span>English</span>
 
             <svg
@@ -61,15 +59,9 @@ export default function PreparationPage() {
 
         </section>
 
-
-       {/* MAIN INSTRUCTION AREA */}
 <section className="preparation-content">
-
-  {/* LEFT SIDE */}
   <div className="instruction-list">
-
-
-    {/* 1. LIGHTING */}
+{/* 1. LIGHTING */}
     <div className="instruction-item">
 
       <div className="instruction-icon">
@@ -90,8 +82,7 @@ export default function PreparationPage() {
 
     </div>
 
-
-    {/* 2. ORIGINAL ID */}
+{/* 2. ORIGINAL ID */}
     <div className="instruction-item">
 
       <div className="instruction-icon">
@@ -179,10 +170,6 @@ export default function PreparationPage() {
     </div>
 
   </div>
-
-
-
-          {/* RIGHT SIDE IMAGE */}
           <div className="preparation-image-wrapper">
 
             <img

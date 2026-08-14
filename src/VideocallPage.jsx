@@ -5,10 +5,8 @@ import "./VideoCallPage.css";
 export default function VideoCallPage() {
   const navigate = useNavigate();
 
-  // Customer's live video
   const localVideoRef = useRef(null);
 
-  // Store camera + microphone stream
   const streamRef = useRef(null);
 
   // States
@@ -20,11 +18,6 @@ export default function VideoCallPage() {
 
   const [callTime, setCallTime] = useState(0);
 
-
-  /* ==============================
-     START CAMERA WHEN PAGE OPENS
-  ============================== */
-
   useEffect(() => {
     startCamera();
 
@@ -32,11 +25,6 @@ export default function VideoCallPage() {
       stopAllTracks();
     };
   }, []);
-
-
-  /* ==============================
-     CALL TIMER
-  ============================== */
 
   useEffect(() => {
     const timer = setInterval(() => {
@@ -48,14 +36,8 @@ export default function VideoCallPage() {
     };
   }, []);
 
-
-  /* ==============================
-     START CAMERA + MICROPHONE
-  ============================== */
-
   const startCamera = async (cameraMode = "user") => {
     try {
-      // Stop previous camera/microphone
       stopAllTracks();
 
       const stream =
@@ -71,8 +53,6 @@ export default function VideoCallPage() {
 
       // Store stream
       streamRef.current = stream;
-
-      // Show stream in video element
       if (localVideoRef.current) {
         localVideoRef.current.srcObject = stream;
       }
@@ -87,11 +67,6 @@ export default function VideoCallPage() {
     }
   };
 
-
-  /* ==============================
-     STOP ALL MEDIA
-  ============================== */
-
   const stopAllTracks = () => {
     if (!streamRef.current) return;
 
@@ -103,11 +78,6 @@ export default function VideoCallPage() {
 
     streamRef.current = null;
   };
-
-
-  /* ==============================
-     MUTE / UNMUTE
-  ============================== */
 
   const handleMute = () => {
     if (!streamRef.current) return;
@@ -125,10 +95,6 @@ export default function VideoCallPage() {
   };
 
 
-  /* ==============================
-     VIDEO ON / OFF
-  ============================== */
-
   const handleVideo = () => {
     if (!streamRef.current) return;
 
@@ -140,14 +106,9 @@ export default function VideoCallPage() {
     // Turn camera track on/off
     videoTrack.enabled = !videoTrack.enabled;
 
-    // React state
+    
     setVideoOff(!videoTrack.enabled);
   };
-
-
-  /* ==============================
-     SWITCH CAMERA
-  ============================== */
 
   const handleSwitchCamera = async () => {
     const newMode =
@@ -161,9 +122,6 @@ export default function VideoCallPage() {
   };
 
 
-  /* ==============================
-     DOCUMENT SELECT
-  ============================== */
 
   const handleDocument = (event) => {
     const file = event.target.files[0];
@@ -177,27 +135,14 @@ export default function VideoCallPage() {
       file
     );
 
-    // Later you will send the file
-    // to your backend here.
   };
-
-
-  /* ==============================
-     END CALL
-  ============================== */
 
   const handleEndCall = () => {
-    // Stop camera and microphone
     stopAllTracks();
 
-    // Go back to landing page
+    
     navigate("/");
   };
-
-
-  /* ==============================
-     FORMAT TIMER
-  ============================== */
 
   const formatTime = (seconds) => {
     const hours =
@@ -227,9 +172,7 @@ export default function VideoCallPage() {
       <div className="video-call-container">
 
 
-        {/* =========================
-            TOP BAR
-        ========================== */}
+    
 
         <div className="video-top-bar">
 
@@ -255,14 +198,8 @@ export default function VideoCallPage() {
         </div>
 
 
-        {/* =========================
-            VIDEO AREA
-        ========================== */}
 
         <div className="video-area">
-
-
-          {/* CUSTOMER LIVE CAMERA */}
 
           <video
             ref={localVideoRef}
@@ -271,9 +208,6 @@ export default function VideoCallPage() {
             playsInline
             className="customer-video"
           />
-
-
-          {/* CAMERA OFF MESSAGE */}
 
           {videoOff && (
             <div className="video-off-message">
@@ -291,11 +225,6 @@ export default function VideoCallPage() {
             </div>
           )}
 
-
-          {/* =========================
-              OPERATOR PLACEHOLDER
-          ========================== */}
-
           <div className="operator-video-box">
 
             <img
@@ -307,11 +236,6 @@ export default function VideoCallPage() {
           </div>
 
         </div>
-
-
-        {/* =========================
-            INFORMATION AREA
-        ========================== */}
 
         <div className="information-grid">
 
@@ -378,11 +302,6 @@ export default function VideoCallPage() {
 
           </div>
 
-
-          {/* =========================
-              DOCUMENTS
-          ========================== */}
-
           <div className="information-card">
 
             <h3>
@@ -421,17 +340,7 @@ export default function VideoCallPage() {
 
         </div>
 
-
-        {/* =========================
-            CALL CONTROLS
-        ========================== */}
-
         <div className="call-controls">
-
-
-          {/* =========================
-              MUTE
-          ========================== */}
 
           <button
             className={
@@ -468,11 +377,6 @@ export default function VideoCallPage() {
 
           </button>
 
-
-          {/* =========================
-              VIDEO
-          ========================== */}
-
           <button
             className={
               videoOff
@@ -507,10 +411,6 @@ export default function VideoCallPage() {
             </span>
 
           </button>
-
-{/* =========================
-    SWITCH CAMERA
-========================== */}
 
 <button
   className="control-button"
@@ -556,11 +456,6 @@ export default function VideoCallPage() {
 
 </button>
 
-
-          {/* =========================
-              UPLOAD
-          ========================== */}
-
           <label className="control-button upload-control">
 
             <span className="control-icon-wrapper upload-icon">
@@ -578,11 +473,6 @@ export default function VideoCallPage() {
             />
 
           </label>
-
-
-          {/* =========================
-              END CALL
-          ========================== */}
 
           <button
             className="control-button end-call-button"

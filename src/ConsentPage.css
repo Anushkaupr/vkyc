@@ -15,11 +15,7 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   background: #ffffff;
 }
-
-
-/* ==============================
-   WHOLE PAGE
-============================== */
+/* WHOLE PAGE */
 
 .consent-page {
   width: 100%;
@@ -31,11 +27,6 @@ body {
 
   padding: 0;
 }
-
-
-/* ==============================
-   MAIN PAGE CONTAINER
-============================== */
 
 .consent-card {
   width: 100%;
@@ -50,11 +41,6 @@ body {
   box-shadow: none;
 }
 
-
-/* ==============================
-   HEADER
-============================== */
-
 .consent-header {
   width: 100%;
 
@@ -64,9 +50,7 @@ body {
 }
 
 
-/* ==============================
-   BANK LOGO
-============================== */
+/*BANK LOGO*/
 
 .consent-bank {
   display: flex;
@@ -83,9 +67,7 @@ body {
 }
 
 
-/* ==============================
-   LANGUAGE
-============================== */
+/*LANGUAGE */
 
 .consent-language {
   display: flex;
@@ -105,11 +87,6 @@ body {
   width: 17px;
   height: 17px;
 }
-
-
-/* ==============================
-   TITLE
-============================== */
 
 .consent-title {
   width: 100%;
@@ -139,9 +116,7 @@ body {
 }
 
 
-/* ==============================
-   TERMS BOX
-============================== */
+/*TERMS BOX*/
 
 .terms-box {
   width: 100%;
@@ -158,9 +133,7 @@ body {
 }
 
 
-/* ==============================
-   INDIVIDUAL TERMS SECTION
-============================== */
+/* INDIVIDUAL TERMS SECTION*/
 
 .terms-section {
   margin-bottom: 40px;
@@ -189,9 +162,7 @@ body {
 }
 
 
-/* ==============================
-   CHECKBOX SECTION
-============================== */
+/*CHECKBOX SECTION*/
 
 .consent-checkbox-row {
   width: 100%;
@@ -210,9 +181,7 @@ body {
 }
 
 
-/* ==============================
-   HIDE NORMAL CHECKBOX
-============================== */
+/*HIDE NORMAL CHECKBOX*/
 
 .consent-checkbox-row input {
   position: absolute;
@@ -223,9 +192,7 @@ body {
 }
 
 
-/* ==============================
-   CUSTOM CHECKBOX
-============================== */
+/*CUSTOM CHECKBOX*/
 
 .custom-checkbox {
   width: 25px;
@@ -244,9 +211,7 @@ body {
 }
 
 
-/* ==============================
-   CHECKED
-============================== */
+/* CHECKED */
 
 .consent-checkbox-row input:checked + .custom-checkbox {
   background: #075bd3;
@@ -259,9 +224,7 @@ body {
 }
 
 
-/* ==============================
-   CHECKBOX TEXT
-============================== */
+/* CHECKBOX TEXT */
 
 .checkbox-text {
   color: #1760c8;
@@ -273,9 +236,7 @@ body {
 }
 
 
-/* ==============================
-   CONTINUE BUTTON
-============================== */
+/* CONTINUE BUTTON*/
 
 .consent-button {
   width: 100%;
@@ -320,9 +281,7 @@ body {
 }
 
 
-/* ==============================
-   DISABLED BUTTON
-============================== */
+/* DISABLED BUTTON */
 
 .consent-button:disabled {
   background: #9aabc1;

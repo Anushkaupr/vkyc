@@ -32,9 +32,6 @@ export default function QueuePage() {
 
       <div className="queue-card">
 
-        {/* =========================
-            HEADER
-        ========================== */}
 
         <header className="queue-header">
 
@@ -56,11 +53,6 @@ export default function QueuePage() {
 
         </header>
 
-
-        {/* =========================
-            TITLE
-        ========================== */}
-
         <section className="queue-title">
 
           <h1>
@@ -73,20 +65,12 @@ export default function QueuePage() {
 
         </section>
 
-
-        {/* =========================
-            WAITING CIRCLE
-        ========================== */}
-
         <section className="queue-waiting-area">
 
           <div className="queue-circle">
 
-            {/* Animated dotted ring */}
             <div className="queue-ring"></div>
 
-
-            {/* Inside content */}
             <div className="queue-circle-content">
 
               <img
@@ -108,12 +92,6 @@ export default function QueuePage() {
           </div>
 
         </section>
-
-
-        {/* =========================
-            INFORMATION BOX
-        ========================== */}
-
         <div className="queue-information-box">
 
           <h3>
@@ -125,12 +103,6 @@ export default function QueuePage() {
           </p>
 
         </div>
-
-
-        {/* =========================
-            SUPPORT MESSAGE
-        ========================== */}
-
         <p className="queue-support">
           Need help? Contact our support center.
         </p>

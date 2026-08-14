@@ -1,7 +1,4 @@
-/* =========================
-   GLOBAL
-========================= */
-
+/* GLOBAL */
 * {
   margin: 0;
   padding: 0;
@@ -19,11 +16,7 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   background: #ffffff;
 }
-
-
-/* =========================
-   COMPLETE PAGE
-========================= */
+/*COMPLETE PAGE */
 
 .vkyc-page {
   width: 100%;
@@ -37,9 +30,7 @@ body {
 }
 
 
-/* =========================
-   MAIN PAGE CONTAINER
-========================= */
+/* MAIN PAGE CONTAINER */
 
 .vkyc-card {
   width: 100%;
@@ -56,11 +47,7 @@ body {
   border-radius: 0;
   box-shadow: none;
 }
-
-
-/* =========================
-   HEADER
-========================= */
+/* HEADER */
 
 .vkyc-header {
   width: 100%;
@@ -70,10 +57,7 @@ body {
   align-items: center;
 }
 
-
-/* =========================
-   BANK LOGO
-========================= */
+/*  BANK LOGO */
 
 .bank-brand {
   display: flex;
@@ -89,10 +73,7 @@ body {
   object-fit: contain;
 }
 
-
-/* =========================
-   LANGUAGE
-========================= */
+/* LANGUAGE*/
 
 .language-selector {
   display: flex;
@@ -120,10 +101,7 @@ body {
   object-fit: contain;
 }
 
-
-/* =========================
-   MAIN CONTENT
-========================= */
+/* MAIN CONTENT */
 
 .vkyc-main {
   width: 100%;
@@ -136,10 +114,7 @@ body {
   align-items: center;
 }
 
-
-/* =========================
-   TITLE
-========================= */
+/* TITLE */
 .title-section {
   width: 100%;
   text-align: center;
@@ -183,9 +158,7 @@ body {
   text-align: center;
 }
 
-/* =========================
-   LANDING IMAGE
-========================= */
+/* LANDING IMAGE */
 
 .hero-wrapper {
   width: 100%;
@@ -210,9 +183,7 @@ body {
 }
 
 
-/* =========================
-   SECURITY INFORMATION
-========================= */
+/* SECURITY INFORMATION */
 
 .security-list {
   width: 100%;
@@ -241,9 +212,7 @@ body {
 }
 
 
-/* =========================
-   SECURITY ICON
-========================= */
+/*  SECURITY ICON */
 
 .security-list {
   width: 100%;
@@ -281,9 +250,7 @@ body {
   display: block;
 }
 
-/* =========================
-   JOIN SESSION BUTTON
-========================= */
+/*JOIN SESSION BUTTON */
 
 .join-button {
   width: 100%;
@@ -330,9 +297,7 @@ body {
 }
 
 
-/* =========================
-   EXPIRATION TIMER
-========================= */
+/*EXPIRATION TIMER */
 
 .expiry-text {
   margin-top: 19px;
@@ -354,9 +319,7 @@ body {
 }
 
 
-/* =========================
-   FOOTER
-========================= */
+/*FOOTER */
 
 .vkyc-footer {
   width: 100%;

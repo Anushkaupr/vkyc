@@ -15,11 +15,7 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   background: #ffffff;
 }
-
-
-/* ==============================
-   WHOLE PAGE
-============================== */
+/*WHOLE PAGE */
 
 .preparation-page {
   width: 100%;
@@ -31,11 +27,7 @@ body {
 
   padding: 0;
 }
-
-
-/* ==============================
-   MAIN PAGE CONTAINER
-============================== */
+/* MAIN PAGE CONTAINER*/
 
 .preparation-card {
   width: 100%;
@@ -49,12 +41,6 @@ body {
   border-radius: 0;
   box-shadow: none;
 }
-
-
-/* ==============================
-   HEADER
-============================== */
-
 .preparation-header {
   width: 100%;
 
@@ -63,11 +49,7 @@ body {
   align-items: center;
 }
 
-
-/* ==============================
-   BANK LOGO
-============================== */
-
+/*  BANK LOGO */
 .preparation-bank {
   display: flex;
   align-items: center;
@@ -81,11 +63,6 @@ body {
 
   object-fit: contain;
 }
-
-
-/* ==============================
-   LANGUAGE
-============================== */
 
 .preparation-language {
   display: flex;
@@ -105,12 +82,7 @@ body {
   width: 17px;
   height: 17px;
 }
-
-
-/* ==============================
-   TITLE
-============================== */
-
+/*  TITLE */
 .preparation-title {
   width: 100%;
   max-width: 900px;
@@ -137,11 +109,7 @@ body {
 
   line-height: 1.5;
 }
-
-
-/* ==============================
-   MAIN CONTENT
-============================== */
+/*  MAIN CONTENT*/
 
 .preparation-content {
   width: 100%;
@@ -157,11 +125,7 @@ body {
 
   align-items: center;
 }
-
-
-/* ==============================
-   INSTRUCTION LIST
-============================== */
+/*  INSTRUCTION LIST */
 
 .instruction-list {
   display: flex;
@@ -169,11 +133,7 @@ body {
 
   gap: 36px;
 }
-
-
-/* ==============================
-   INDIVIDUAL INSTRUCTION
-============================== */
+/*INDIVIDUAL INSTRUCTION */
 .instruction-list {
   display: flex;
   flex-direction: column;
@@ -225,10 +185,6 @@ body {
   line-height: 1.45;
 }
 
-/* ==============================
-   INSTRUCTION TEXT
-============================== */
-
 .instruction-text h2 {
   margin-bottom: 10px;
 
@@ -248,11 +204,6 @@ body {
   line-height: 1.45;
 }
 
-
-/* ==============================
-   RIGHT SIDE IMAGE
-============================== */
-
 .preparation-image-wrapper {
   width: 100%;
 
@@ -270,11 +221,7 @@ body {
 
   object-fit: contain;
 }
-
-
-/* ==============================
-   DIVIDER
-============================== */
+/* DIVIDER */
 
 .preparation-divider {
   width: 100%;
@@ -288,9 +235,7 @@ body {
 }
 
 
-/* ==============================
-   READY CHECKBOX
-============================== */
+/* READY CHECKBOX */
 
 .ready-checkbox-row {
   width: 100%;
@@ -320,9 +265,7 @@ body {
 }
 
 
-/* ==============================
-   CUSTOM CHECKBOX
-============================== */
+/* CUSTOM CHECKBOX */
 
 .ready-custom-checkbox {
   width: 31px;
@@ -355,9 +298,7 @@ body {
 }
 
 
-/* ==============================
-   CHECKBOX TEXT
-============================== */
+/* CHECKBOX TEXT */
 
 .ready-checkbox-text {
   color: #253551;
@@ -369,9 +310,7 @@ body {
 }
 
 
-/* ==============================
-   JOIN VIDEO BUTTON
-============================== */
+/* JOIN VIDEO BUTTON */
 
 .video-session-button {
   width: 100%;
@@ -425,241 +364,3 @@ body {
   transform: none;
 }
 
-
-/* ==============================
-   TABLET
-============================== */
-
-@media (max-width: 768px) {
-
-  .preparation-card {
-    min-height: 100vh;
-
-    padding: 28px 30px 45px;
-  }
-
-
-  /* HEADER */
-
-  .preparation-bank-logo {
-    width: 135px;
-  }
-
-
-  /* TITLE */
-
-  .preparation-title {
-    margin-top: 55px;
-  }
-
-  .preparation-title h1 {
-    font-size: 28px;
-  }
-
-  .preparation-title p {
-    font-size: 15px;
-  }
-
-
-  /* CONTENT */
-
-  .preparation-content {
-    grid-template-columns: 1fr 210px;
-
-    gap: 25px;
-  }
-
-
-  /* INSTRUCTIONS */
-
-  .instruction-list {
-    gap: 30px;
-  }
-
-  .instruction-icon {
-    width: 55px;
-    height: 55px;
-
-    min-width: 55px;
-  }
-
-  .instruction-icon svg {
-    width: 35px;
-    height: 35px;
-  }
-
-  .instruction-text h2 {
-    font-size: 16px;
-  }
-
-  .instruction-text p {
-    font-size: 13px;
-  }
-
-
-  /* IMAGE */
-
-  .preparation-image {
-    max-width: 200px;
-  }
-}
-
-
-/* ==============================
-   MOBILE
-============================== */
-
-@media (max-width: 550px) {
-
-  .preparation-page {
-    width: 100%;
-    min-height: 100vh;
-
-    padding: 0;
-
-    background: #ffffff;
-  }
-
-  .preparation-card {
-    width: 100%;
-    min-height: 100vh;
-
-    padding: 22px 20px 35px;
-  }
-
-
-  /* HEADER */
-
-  .preparation-bank-logo {
-    width: 115px;
-  }
-
-  .preparation-language {
-    font-size: 13px;
-  }
-
-  .preparation-language svg {
-    width: 15px;
-    height: 15px;
-  }
-
-
-  /* TITLE */
-
-  .preparation-title {
-    margin-top: 45px;
-  }
-
-  .preparation-title h1 {
-    margin-bottom: 15px;
-
-    font-size: 25px;
-  }
-
-  .preparation-title p {
-    font-size: 14px;
-  }
-
-
-  /* CONTENT */
-
-  .preparation-content {
-    margin-top: 40px;
-
-    display: flex;
-    flex-direction: column;
-
-    gap: 30px;
-  }
-
-
-  /* IMAGE */
-
-  .preparation-image-wrapper {
-    order: -1;
-  }
-
-  .preparation-image {
-    max-width: 210px;
-    max-height: 240px;
-  }
-
-
-  /* INSTRUCTION LIST */
-
-  .instruction-list {
-    width: 100%;
-
-    gap: 27px;
-  }
-
-  .instruction-item {
-    gap: 15px;
-  }
-
-
-  /* INSTRUCTION ICON */
-
-  .instruction-icon {
-    width: 48px;
-    height: 48px;
-
-    min-width: 48px;
-  }
-
-  .instruction-icon svg {
-    width: 31px;
-    height: 31px;
-  }
-
-
-  /* INSTRUCTION TEXT */
-
-  .instruction-text h2 {
-    margin-bottom: 6px;
-
-    font-size: 15px;
-  }
-
-  .instruction-text p {
-    font-size: 12px;
-  }
-
-
-  /* DIVIDER */
-
-  .preparation-divider {
-    margin-top: 40px;
-  }
-
-
-  /* CHECKBOX */
-
-  .ready-checkbox-row {
-    margin-top: 25px;
-
-    align-items: flex-start;
-  }
-
-  .ready-custom-checkbox {
-    width: 27px;
-    height: 27px;
-
-    min-width: 27px;
-  }
-
-  .ready-checkbox-text {
-    font-size: 14px;
-  }
-
-
-  /* BUTTON */
-
-  .video-session-button {
-    height: 52px;
-
-    margin-top: 28px;
-
-    font-size: 16px;
-  }
-}

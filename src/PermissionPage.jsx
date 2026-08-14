@@ -106,14 +106,7 @@ export default function PermissionPage() {
 
       <div className="permission-card">
 
-
-        {/* =========================
-            HEADER
-        ========================== */}
-
         <header className="permission-header">
-
-          {/* BANK LOGO */}
           <div className="permission-bank">
 
             <img
@@ -123,9 +116,6 @@ export default function PermissionPage() {
             />
 
           </div>
-
-
-          {/* LANGUAGE */}
           <div className="permission-language">
 
             <span>English</span>
@@ -146,12 +136,6 @@ export default function PermissionPage() {
           </div>
 
         </header>
-
-
-        {/* =========================
-            TITLE
-        ========================== */}
-
         <section className="permission-title">
 
           <h1>
@@ -165,15 +149,7 @@ export default function PermissionPage() {
 
         </section>
 
-
-        {/* =========================
-            PERMISSION CARDS
-        ========================== */}
-
         <section className="permission-list">
-
-
-          {/* CAMERA */}
 
           <div className="permission-item">
 
@@ -326,10 +302,6 @@ export default function PermissionPage() {
 
         </section>
 
-{/* =========================
-    PRIVACY INFORMATION
-========================== */}
-
 <div className="privacy-box">
 
   <div className="privacy-icon">
@@ -355,11 +327,6 @@ export default function PermissionPage() {
   </p>
 
 </div>
-
-
-{/* =========================
-    BOTTOM MESSAGE
-========================== */}
 
 <p className="permission-footer-text">
 
