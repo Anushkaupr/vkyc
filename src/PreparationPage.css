@@ -1,0 +1,665 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  width: 100%;
+  min-height: 100%;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #ffffff;
+}
+
+
+/* ==============================
+   WHOLE PAGE
+============================== */
+
+.preparation-page {
+  width: 100%;
+  min-height: 100vh;
+
+  display: flex;
+
+  background: #ffffff;
+
+  padding: 0;
+}
+
+
+/* ==============================
+   MAIN PAGE CONTAINER
+============================== */
+
+.preparation-card {
+  width: 100%;
+  min-height: 100vh;
+
+  padding: 35px 70px 50px;
+
+  background: #ffffff;
+
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+
+/* ==============================
+   HEADER
+============================== */
+
+.preparation-header {
+  width: 100%;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+/* ==============================
+   BANK LOGO
+============================== */
+
+.preparation-bank {
+  display: flex;
+  align-items: center;
+}
+
+.preparation-bank-logo {
+  width: 145px;
+  height: auto;
+
+  display: block;
+
+  object-fit: contain;
+}
+
+
+/* ==============================
+   LANGUAGE
+============================== */
+
+.preparation-language {
+  display: flex;
+  align-items: center;
+
+  gap: 7px;
+
+  color: #10234d;
+
+  font-size: 15px;
+  font-weight: 600;
+
+  cursor: pointer;
+}
+
+.preparation-language svg {
+  width: 17px;
+  height: 17px;
+}
+
+
+/* ==============================
+   TITLE
+============================== */
+
+.preparation-title {
+  width: 100%;
+  max-width: 900px;
+
+  margin: 65px auto 0;
+
+  text-align: center;
+}
+
+.preparation-title h1 {
+  margin-bottom: 20px;
+
+  color: #071d49;
+
+  font-size: 31px;
+  font-weight: 750;
+}
+
+.preparation-title p {
+  color: #536078;
+
+  font-size: 16px;
+  font-weight: 500;
+
+  line-height: 1.5;
+}
+
+
+/* ==============================
+   MAIN CONTENT
+============================== */
+
+.preparation-content {
+  width: 100%;
+  max-width: 900px;
+
+  margin: 60px auto 0;
+
+  display: grid;
+
+  grid-template-columns: 1fr 280px;
+
+  gap: 50px;
+
+  align-items: center;
+}
+
+
+/* ==============================
+   INSTRUCTION LIST
+============================== */
+
+.instruction-list {
+  display: flex;
+  flex-direction: column;
+
+  gap: 36px;
+}
+
+
+/* ==============================
+   INDIVIDUAL INSTRUCTION
+============================== */
+.instruction-list {
+  display: flex;
+  flex-direction: column;
+
+  gap: 36px;
+}
+
+.instruction-item {
+  display: flex;
+  align-items: center;
+
+  gap: 22px;
+}
+
+.instruction-icon {
+  width: 62px;
+  height: 62px;
+  min-width: 62px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.instruction-icon-image {
+  width: 62px;
+  height: 62px;
+
+  object-fit: contain;
+  display: block;
+}
+
+.instruction-text h2 {
+  margin-bottom: 10px;
+
+  color: #122348;
+
+  font-size: 17px;
+  font-weight: 700;
+
+  line-height: 1.3;
+}
+
+.instruction-text p {
+  color: #536078;
+
+  font-size: 14px;
+
+  line-height: 1.45;
+}
+
+/* ==============================
+   INSTRUCTION TEXT
+============================== */
+
+.instruction-text h2 {
+  margin-bottom: 10px;
+
+  color: #122348;
+
+  font-size: 17px;
+  font-weight: 700;
+
+  line-height: 1.3;
+}
+
+.instruction-text p {
+  color: #536078;
+
+  font-size: 14px;
+
+  line-height: 1.45;
+}
+
+
+/* ==============================
+   RIGHT SIDE IMAGE
+============================== */
+
+.preparation-image-wrapper {
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.preparation-image {
+  width: 100%;
+  max-width: 255px;
+  max-height: 310px;
+
+  display: block;
+
+  object-fit: contain;
+}
+
+
+/* ==============================
+   DIVIDER
+============================== */
+
+.preparation-divider {
+  width: 100%;
+  max-width: 900px;
+
+  height: 1px;
+
+  margin: 65px auto 0;
+
+  background: #e2e7ed;
+}
+
+
+/* ==============================
+   READY CHECKBOX
+============================== */
+
+.ready-checkbox-row {
+  width: 100%;
+  max-width: 900px;
+
+  margin: 30px auto 0;
+
+  display: flex;
+  align-items: center;
+
+  gap: 14px;
+
+  cursor: pointer;
+
+  user-select: none;
+}
+
+
+/* Hide actual checkbox */
+
+.ready-checkbox-row input {
+  position: absolute;
+
+  opacity: 0;
+
+  pointer-events: none;
+}
+
+
+/* ==============================
+   CUSTOM CHECKBOX
+============================== */
+
+.ready-custom-checkbox {
+  width: 31px;
+  height: 31px;
+
+  min-width: 31px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #ffffff;
+
+  border: 2px solid #b9c5d4;
+  border-radius: 5px;
+}
+
+
+/* Checked state */
+
+.ready-checkbox-row input:checked + .ready-custom-checkbox {
+  background: #075bd3;
+
+  border-color: #075bd3;
+}
+
+.ready-custom-checkbox svg {
+  width: 21px;
+  height: 21px;
+}
+
+
+/* ==============================
+   CHECKBOX TEXT
+============================== */
+
+.ready-checkbox-text {
+  color: #253551;
+
+  font-size: 16px;
+  font-weight: 600;
+
+  line-height: 1.4;
+}
+
+
+/* ==============================
+   JOIN VIDEO BUTTON
+============================== */
+
+.video-session-button {
+  width: 100%;
+  max-width: 900px;
+
+  height: 58px;
+
+  display: block;
+
+  margin: 35px auto 0;
+
+  border: none;
+  border-radius: 7px;
+
+  background: #075bd3;
+
+  color: #ffffff;
+
+  font-size: 18px;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  box-shadow: 0 3px 7px rgba(0, 77, 190, 0.18);
+
+  transition:
+    background 0.2s ease,
+    transform 0.15s ease,
+    box-shadow 0.15s ease;
+}
+
+.video-session-button:hover:not(:disabled) {
+  background: #064db7;
+
+  transform: translateY(-1px);
+
+  box-shadow: 0 5px 11px rgba(0, 77, 190, 0.22);
+}
+
+.video-session-button:active:not(:disabled) {
+  transform: translateY(0);
+}
+
+.video-session-button:disabled {
+  background: #9baabd;
+
+  cursor: not-allowed;
+
+  box-shadow: none;
+
+  transform: none;
+}
+
+
+/* ==============================
+   TABLET
+============================== */
+
+@media (max-width: 768px) {
+
+  .preparation-card {
+    min-height: 100vh;
+
+    padding: 28px 30px 45px;
+  }
+
+
+  /* HEADER */
+
+  .preparation-bank-logo {
+    width: 135px;
+  }
+
+
+  /* TITLE */
+
+  .preparation-title {
+    margin-top: 55px;
+  }
+
+  .preparation-title h1 {
+    font-size: 28px;
+  }
+
+  .preparation-title p {
+    font-size: 15px;
+  }
+
+
+  /* CONTENT */
+
+  .preparation-content {
+    grid-template-columns: 1fr 210px;
+
+    gap: 25px;
+  }
+
+
+  /* INSTRUCTIONS */
+
+  .instruction-list {
+    gap: 30px;
+  }
+
+  .instruction-icon {
+    width: 55px;
+    height: 55px;
+
+    min-width: 55px;
+  }
+
+  .instruction-icon svg {
+    width: 35px;
+    height: 35px;
+  }
+
+  .instruction-text h2 {
+    font-size: 16px;
+  }
+
+  .instruction-text p {
+    font-size: 13px;
+  }
+
+
+  /* IMAGE */
+
+  .preparation-image {
+    max-width: 200px;
+  }
+}
+
+
+/* ==============================
+   MOBILE
+============================== */
+
+@media (max-width: 550px) {
+
+  .preparation-page {
+    width: 100%;
+    min-height: 100vh;
+
+    padding: 0;
+
+    background: #ffffff;
+  }
+
+  .preparation-card {
+    width: 100%;
+    min-height: 100vh;
+
+    padding: 22px 20px 35px;
+  }
+
+
+  /* HEADER */
+
+  .preparation-bank-logo {
+    width: 115px;
+  }
+
+  .preparation-language {
+    font-size: 13px;
+  }
+
+  .preparation-language svg {
+    width: 15px;
+    height: 15px;
+  }
+
+
+  /* TITLE */
+
+  .preparation-title {
+    margin-top: 45px;
+  }
+
+  .preparation-title h1 {
+    margin-bottom: 15px;
+
+    font-size: 25px;
+  }
+
+  .preparation-title p {
+    font-size: 14px;
+  }
+
+
+  /* CONTENT */
+
+  .preparation-content {
+    margin-top: 40px;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 30px;
+  }
+
+
+  /* IMAGE */
+
+  .preparation-image-wrapper {
+    order: -1;
+  }
+
+  .preparation-image {
+    max-width: 210px;
+    max-height: 240px;
+  }
+
+
+  /* INSTRUCTION LIST */
+
+  .instruction-list {
+    width: 100%;
+
+    gap: 27px;
+  }
+
+  .instruction-item {
+    gap: 15px;
+  }
+
+
+  /* INSTRUCTION ICON */
+
+  .instruction-icon {
+    width: 48px;
+    height: 48px;
+
+    min-width: 48px;
+  }
+
+  .instruction-icon svg {
+    width: 31px;
+    height: 31px;
+  }
+
+
+  /* INSTRUCTION TEXT */
+
+  .instruction-text h2 {
+    margin-bottom: 6px;
+
+    font-size: 15px;
+  }
+
+  .instruction-text p {
+    font-size: 12px;
+  }
+
+
+  /* DIVIDER */
+
+  .preparation-divider {
+    margin-top: 40px;
+  }
+
+
+  /* CHECKBOX */
+
+  .ready-checkbox-row {
+    margin-top: 25px;
+
+    align-items: flex-start;
+  }
+
+  .ready-custom-checkbox {
+    width: 27px;
+    height: 27px;
+
+    min-width: 27px;
+  }
+
+  .ready-checkbox-text {
+    font-size: 14px;
+  }
+
+
+  /* BUTTON */
+
+  .video-session-button {
+    height: 52px;
+
+    margin-top: 28px;
+
+    font-size: 16px;
+  }
+}

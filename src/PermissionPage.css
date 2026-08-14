@@ -1,0 +1,657 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  width: 100%;
+  min-height: 100%;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #ffffff;
+}
+
+
+/* ==============================
+   WHOLE PAGE
+============================== */
+
+.permission-page {
+  width: 100%;
+  min-height: 100vh;
+
+  display: flex;
+
+  background: #ffffff;
+
+  padding: 0;
+}
+
+
+/* ==============================
+   MAIN PAGE CONTAINER
+============================== */
+
+.permission-card {
+  width: 100%;
+  min-height: 100vh;
+
+  background: #ffffff;
+
+  padding: 35px 70px 50px;
+
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+
+/* ==============================
+   HEADER
+============================== */
+
+.permission-header {
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+/* ==============================
+   BANK LOGO
+============================== */
+
+.permission-bank {
+  display: flex;
+  align-items: center;
+}
+
+.permission-bank-logo {
+  width: 145px;
+  height: auto;
+
+  display: block;
+
+  object-fit: contain;
+}
+
+
+/* ==============================
+   LANGUAGE
+============================== */
+
+.permission-language {
+  display: flex;
+  align-items: center;
+
+  gap: 7px;
+
+  color: #10234d;
+
+  font-size: 15px;
+  font-weight: 600;
+
+  cursor: pointer;
+}
+
+.permission-language svg {
+  width: 17px;
+  height: 17px;
+}
+
+
+/* ==============================
+   TITLE
+============================== */
+
+.permission-title {
+  width: 100%;
+  max-width: 850px;
+
+  margin: 70px auto 0;
+
+  text-align: center;
+}
+
+.permission-title h1 {
+  margin-bottom: 25px;
+
+  color: #071d49;
+
+  font-size: 34px;
+  font-weight: 750;
+}
+
+.permission-title p {
+  color: #536078;
+
+  font-size: 17px;
+  font-weight: 500;
+
+  line-height: 1.5;
+}
+
+
+/* ==============================
+   PERMISSION LIST
+============================== */
+
+.permission-list {
+  width: 100%;
+  max-width: 850px;
+
+  margin: 50px auto 0;
+
+  display: flex;
+  flex-direction: column;
+
+  gap: 24px;
+}
+
+
+/* ==============================
+   INDIVIDUAL PERMISSION CARD
+============================== */
+
+.permission-item {
+  width: 100%;
+  min-height: 170px;
+
+  display: grid;
+
+  grid-template-columns: 85px 1fr 150px;
+
+  align-items: center;
+
+  padding: 28px 42px;
+
+  border: 2px solid #e4e9f0;
+  border-radius: 16px;
+
+  background: #ffffff;
+}
+
+
+/* ==============================
+   PERMISSION ICON
+============================== */
+
+.permission-icon {
+  width: 60px;
+  height: 60px;
+  min-width: 60px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #f3f7fc;
+
+  border-radius: 50%;
+}
+
+.permission-icon-image {
+  width: 38px;
+  height: 38px;
+
+  display: block;
+
+  object-fit: contain;
+}
+
+
+/* ==============================
+   PERMISSION INFORMATION
+============================== */
+
+.permission-info {
+  display: flex;
+  flex-direction: column;
+
+  align-items: flex-start;
+}
+
+.permission-info h2 {
+  margin-bottom: 13px;
+
+  color: #081d47;
+
+  font-size: 21px;
+  font-weight: 700;
+}
+
+
+/* ==============================
+   REQUIRED LABEL
+============================== */
+
+.required-label {
+  display: inline-block;
+
+  margin-bottom: 17px;
+
+  padding: 4px 8px;
+
+  background: #e5f8e8;
+
+  border: 1px solid #caefd0;
+  border-radius: 6px;
+
+  color: #21924a;
+
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.permission-info p {
+  color: #45516a;
+
+  font-size: 15px;
+  font-weight: 500;
+}
+
+
+/* ==============================
+   ALLOW BUTTON
+============================== */
+
+.allow-button {
+  width: 145px;
+  height: 51px;
+
+  justify-self: end;
+
+  border: none;
+  border-radius: 7px;
+
+  background: #075bd3;
+
+  color: #ffffff;
+
+  font-size: 17px;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  box-shadow: 0 2px 5px rgba(0, 75, 190, 0.22);
+
+  transition:
+    background 0.2s ease,
+    transform 0.15s ease,
+    box-shadow 0.15s ease;
+}
+
+.allow-button:hover:not(.allowed) {
+  background: #064db7;
+
+  transform: translateY(-1px);
+
+  box-shadow: 0 4px 8px rgba(0, 75, 190, 0.2);
+}
+
+.allow-button:active {
+  transform: translateY(0);
+}
+
+
+/* ==============================
+   ALLOWED BUTTON
+============================== */
+
+.allow-button.allowed {
+  background: #23a85a;
+}
+
+
+/* ==============================
+   PRIVACY BOX
+============================== */
+
+.privacy-box {
+  width: 100%;
+  max-width: 850px;
+
+  min-height: 100px;
+
+  margin: 55px auto 0;
+
+  display: flex;
+  align-items: center;
+
+  gap: 15px;
+
+  padding: 22px 28px;
+
+  border: 2px solid #cfe0fa;
+  border-radius: 13px;
+
+  background: #f4f8ff;
+}
+
+
+/* ==============================
+   PRIVACY ICON
+============================== */
+
+.privacy-icon {
+  width: 32px;
+  height: 32px;
+  min-width: 32px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.privacy-icon-image {
+  width: 26px;
+  height: 26px;
+
+  max-width: 26px;
+  max-height: 26px;
+
+  object-fit: contain;
+
+  display: block;
+}
+
+
+/* ==============================
+   PRIVACY TEXT
+============================== */
+
+.privacy-box p {
+  color: #263652;
+
+  font-size: 16px;
+
+  line-height: 1.55;
+}
+
+.privacy-box strong {
+  font-weight: 700;
+}
+
+
+/* ==============================
+   BOTTOM MESSAGE
+============================== */
+
+.permission-footer-text {
+  width: 100%;
+  max-width: 850px;
+
+  margin: 55px auto 0;
+
+  color: #384760;
+
+  font-size: 15px;
+  font-weight: 500;
+
+  text-align: center;
+}
+
+
+/* ==============================
+   TABLET
+============================== */
+
+@media (max-width: 768px) {
+
+  .permission-card {
+    padding: 28px 30px 45px;
+  }
+
+
+  /* HEADER */
+
+  .permission-bank-logo {
+    width: 135px;
+  }
+
+
+  /* TITLE */
+
+  .permission-title {
+    margin-top: 60px;
+  }
+
+  .permission-title h1 {
+    font-size: 30px;
+  }
+
+  .permission-title p {
+    font-size: 15px;
+  }
+
+
+  /* PERMISSION CARDS */
+
+  .permission-list {
+    margin-top: 42px;
+  }
+
+  .permission-item {
+    grid-template-columns: 70px 1fr 120px;
+
+    min-height: 160px;
+
+    padding: 24px 25px;
+  }
+
+
+  /* ICON */
+
+  .permission-icon {
+    width: 55px;
+    height: 55px;
+    min-width: 55px;
+  }
+
+  .permission-icon-image {
+    width: 35px;
+    height: 35px;
+  }
+
+
+  /* INFORMATION */
+
+  .permission-info h2 {
+    font-size: 19px;
+  }
+
+
+  /* BUTTON */
+
+  .allow-button {
+    width: 115px;
+  }
+
+
+  /* PRIVACY */
+
+  .privacy-icon {
+    width: 30px;
+    height: 30px;
+    min-width: 30px;
+  }
+
+  .privacy-icon-image {
+    width: 24px;
+    height: 24px;
+
+    max-width: 24px;
+    max-height: 24px;
+  }
+}
+
+
+/* ==============================
+   MOBILE
+============================== */
+
+@media (max-width: 520px) {
+
+  .permission-page {
+    width: 100%;
+    min-height: 100vh;
+
+    padding: 0;
+
+    background: #ffffff;
+  }
+
+  .permission-card {
+    width: 100%;
+    min-height: 100vh;
+
+    padding: 22px 18px 35px;
+  }
+
+
+  /* HEADER */
+
+  .permission-bank-logo {
+    width: 115px;
+  }
+
+  .permission-language {
+    font-size: 13px;
+  }
+
+  .permission-language svg {
+    width: 15px;
+    height: 15px;
+  }
+
+
+  /* TITLE */
+
+  .permission-title {
+    margin-top: 48px;
+  }
+
+  .permission-title h1 {
+    margin-bottom: 20px;
+
+    font-size: 27px;
+  }
+
+  .permission-title p {
+    font-size: 14px;
+  }
+
+
+  /* PERMISSION LIST */
+
+  .permission-list {
+    margin-top: 35px;
+
+    gap: 18px;
+  }
+
+
+  /* PERMISSION CARD */
+
+  .permission-item {
+    min-height: 175px;
+
+    grid-template-columns: 55px 1fr;
+
+    padding: 22px 20px;
+  }
+
+
+  /* ICON */
+
+  .permission-icon {
+    width: 50px;
+    height: 50px;
+    min-width: 50px;
+  }
+
+  .permission-icon-image {
+    width: 32px;
+    height: 32px;
+  }
+
+
+  /* INFORMATION */
+
+  .permission-info h2 {
+    font-size: 18px;
+  }
+
+  .permission-info p {
+    font-size: 13px;
+  }
+
+  .required-label {
+    margin-bottom: 12px;
+
+    font-size: 12px;
+  }
+
+
+  /* BUTTON */
+
+  .allow-button {
+    grid-column: 1 / 3;
+
+    width: 100%;
+    height: 45px;
+
+    margin-top: 20px;
+
+    font-size: 15px;
+  }
+
+
+  /* PRIVACY */
+
+  .privacy-box {
+    width: 100%;
+
+    margin-top: 35px;
+
+    padding: 18px;
+
+    gap: 10px;
+  }
+
+  .privacy-box p {
+    font-size: 13px;
+  }
+
+  .privacy-icon {
+    width: 26px;
+    height: 26px;
+    min-width: 26px;
+  }
+
+  .privacy-icon-image {
+    width: 29px;
+    height: 34px;
+
+    max-width: 21px;
+    max-height: 21px;
+  }
+
+
+  /* FOOTER */
+
+  .permission-footer-text {
+    margin-top: 40px;
+
+    font-size: 13px;
+
+    line-height: 1.5;
+  }
+}

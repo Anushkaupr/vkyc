@@ -1,0 +1,374 @@
+/* =========================
+   GLOBAL
+========================= */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  width: 100%;
+  min-height: 100%;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #ffffff;
+}
+
+
+/* =========================
+   COMPLETE PAGE
+========================= */
+
+.vkyc-page {
+  width: 100%;
+  min-height: 100vh;
+
+  display: flex;
+
+  background: #ffffff;
+
+  padding: 0;
+}
+
+
+/* =========================
+   MAIN PAGE CONTAINER
+========================= */
+
+.vkyc-card {
+  width: 100%;
+  min-height: 100vh;
+
+  background: #ffffff;
+
+  padding: 35px 70px 30px;
+
+  display: flex;
+  flex-direction: column;
+
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+.vkyc-header {
+  width: 100%;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+/* =========================
+   BANK LOGO
+========================= */
+
+.bank-brand {
+  display: flex;
+  align-items: center;
+}
+
+.bank-logo-image {
+  width: 145px;
+  height: auto;
+
+  display: block;
+
+  object-fit: contain;
+}
+
+
+/* =========================
+   LANGUAGE
+========================= */
+
+.language-selector {
+  display: flex;
+  align-items: center;
+
+  gap: 7px;
+
+  color: #102249;
+
+  font-size: 15px;
+  font-weight: 600;
+
+  cursor: pointer;
+}
+
+
+/* GLOBE IMAGE */
+
+.globe-image {
+  width: 18px;
+  height: 18px;
+
+  display: block;
+
+  object-fit: contain;
+}
+
+
+/* =========================
+   MAIN CONTENT
+========================= */
+
+.vkyc-main {
+  width: 100%;
+  max-width: 650px;
+
+  margin: 60px auto 0;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+/* =========================
+   TITLE
+========================= */
+.title-section {
+  width: 100%;
+  text-align: center;
+}
+
+.title-section h1 {
+  margin-bottom: 10px;
+
+  color: #020409;
+
+  font-size: 32px;
+  font-weight: 750;
+
+  line-height: 1.2;
+
+  white-space: nowrap;
+}
+
+.bank-name {
+  color: #3960ad;
+}
+
+.title-section h3 {
+  margin-bottom: 25px;
+
+  color: #061c48;
+
+  font-size: 24px;
+  font-weight: 700;
+
+  line-height: 1.2;
+}
+
+.subtitle {
+  color: #43506a;
+
+  font-size: 15px;
+
+  line-height: 1.6;
+
+  text-align: center;
+}
+
+/* =========================
+   LANDING IMAGE
+========================= */
+
+.hero-wrapper {
+  width: 100%;
+  height: 300px;
+
+  margin-top: 28px;
+  margin-bottom: 20px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-image {
+  width: 100%;
+  max-width: 420px;
+  max-height: 300px;
+
+  display: block;
+
+  object-fit: contain;
+}
+
+
+/* =========================
+   SECURITY INFORMATION
+========================= */
+
+.security-list {
+  width: 100%;
+
+  margin-top: 15px;
+  margin-bottom: 38px;
+
+  display: flex;
+  flex-direction: column;
+
+  gap: 22px;
+}
+
+.security-row {
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+
+  gap: 15px;
+
+  color: #26344e;
+
+  font-size: 15px;
+  font-weight: 500;
+}
+
+
+/* =========================
+   SECURITY ICON
+========================= */
+
+.security-list {
+  width: 100%;
+
+  margin-top: 15px;
+  margin-bottom: 38px;
+
+  display: flex;
+  flex-direction: column;
+
+  gap: 22px;
+}
+
+.security-row {
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+
+  gap: 15px;
+
+  color: #26344e;
+
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.security-icon-image {
+  width: 24px;
+  height: 24px;
+
+  min-width: 24px;
+
+  object-fit: contain;
+  display: block;
+}
+
+/* =========================
+   JOIN SESSION BUTTON
+========================= */
+
+.join-button {
+  width: 100%;
+  height: 57px;
+
+  border: none;
+  border-radius: 7px;
+
+  background: #0759d6;
+
+  color: #ffffff;
+
+  font-size: 17px;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  box-shadow: 0 3px 7px rgba(0, 77, 190, 0.18);
+
+  transition:
+    background 0.2s ease,
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.join-button:hover:not(:disabled) {
+  background: #064dbd;
+
+  transform: translateY(-1px);
+
+  box-shadow: 0 5px 12px rgba(0, 77, 190, 0.22);
+}
+
+.join-button:active:not(:disabled) {
+  transform: translateY(0);
+}
+
+.join-button:disabled {
+  background: #9ca8b8;
+
+  cursor: not-allowed;
+
+  transform: none;
+}
+
+
+/* =========================
+   EXPIRATION TIMER
+========================= */
+
+.expiry-text {
+  margin-top: 19px;
+
+  color: #2360bd;
+
+  font-size: 14px;
+  font-weight: 500;
+
+  text-align: center;
+}
+
+.expiry-text strong {
+  font-weight: 700;
+}
+
+.expired {
+  color: #d83838;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+.vkyc-footer {
+  width: 100%;
+
+  margin-top: auto;
+
+  padding-top: 50px;
+  padding-bottom: 10px;
+
+  color: #667185;
+
+  font-size: 14px;
+
+  text-align: center;
+}
