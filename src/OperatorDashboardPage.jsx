@@ -9,9 +9,7 @@ export default function OperatorDashboardPage() {
   const [office, setOffice] = useState("Head Office");
   const [notificationOpen, setNotificationOpen] = useState(false);
 
-  /* =========================================================
-     NOTIFICATIONS
-  ========================================================= */
+  /*NOTIFICATIONS */
 
   const [notifications, setNotifications] = useState([
     {
@@ -76,9 +74,7 @@ export default function OperatorDashboardPage() {
     (notification) => notification.unread
   ).length;
 
-  /* =========================================================
-     DASHBOARD DATA
-  ========================================================= */
+  /*DASHBOARD DATA*/
 
   const overviewCards = [
     {
@@ -168,11 +164,7 @@ export default function OperatorDashboardPage() {
     },
   ];
 
-  /* =========================================================
-     SIDEBAR MENU
-
-     route must match App.jsx
-  ========================================================= */
+  /* SIDEBAR MENU */
 
   const menuItems = [
     {
@@ -212,9 +204,7 @@ export default function OperatorDashboardPage() {
     },
   ];
 
-  /* =========================================================
-     SIDEBAR NAVIGATION
-  ========================================================= */
+  /*SIDEBAR NAVIGATION*/
 
   const handleMenuClick = (item) => {
     setActiveMenu(item.name);
@@ -222,9 +212,7 @@ export default function OperatorDashboardPage() {
     navigate(item.route);
   };
 
-  /* =========================================================
-     LOGOUT
-  ========================================================= */
+  /* LOGOUT*/
 
   const handleLogout = () => {
     navigate("/login");
@@ -280,9 +268,7 @@ export default function OperatorDashboardPage() {
     );
   };
 
-  /* =========================================================
-     SESSION REFERENCE CLICK
-  ========================================================= */
+  /* SESSION REFERENCE CLICK= */
 
   const handleSessionClick = (reference) => {
     console.log("Selected session:", reference);
@@ -290,16 +276,10 @@ export default function OperatorDashboardPage() {
     navigate("/session");
   };
 
-  /* =========================================================
-     MAIN JSX
-  ========================================================= */
-
   return (
     <div className="operator-dashboard-page">
       <div className="operator-dashboard-container">
-        {/* =====================================================
-            LEFT SIDEBAR
-        ====================================================== */}
+        {/* LEFT SIDEBAR */}
 
         <aside className="dashboard-sidebar">
           <div className="sidebar-top">
@@ -362,19 +342,10 @@ export default function OperatorDashboardPage() {
             <span>Logout</span>
           </button>
         </aside>
-
-        {/* =====================================================
-            RIGHT MAIN AREA
-        ====================================================== */}
-
         <main className="dashboard-main">
-          {/* ===================================================
-              TOP HEADER
-          ==================================================== */}
 
           <header className="dashboard-header">
-            {/* WELCOME */}
-
+          
             <div className="header-welcome">
               <img
                 src="/logo2.png"
@@ -387,12 +358,10 @@ export default function OperatorDashboardPage() {
               </span>
             </div>
 
-            {/* RIGHT HEADER */}
-
             <div className="header-actions">
+              
               {/* OFFICE */}
-
-              <select
+               <select
                 className="office-select"
                 value={office}
                 onChange={(event) =>
@@ -445,9 +414,7 @@ export default function OperatorDashboardPage() {
             </div>
           </header>
 
-          {/* ===================================================
-              DASHBOARD CONTENT
-          ==================================================== */}
+          {/*DASHBOARD CONTENT*/}
 
           <div className="dashboard-content">
             {/* OVERVIEW TITLE */}
@@ -462,9 +429,7 @@ export default function OperatorDashboardPage() {
               </p>
             </section>
 
-            {/* =================================================
-                OVERVIEW CARDS
-            ================================================== */}
+            {/* OVERVIEW CARDS */}
 
             <section className="overview-cards">
               {overviewCards.map((card) => (
@@ -483,9 +448,7 @@ export default function OperatorDashboardPage() {
               ))}
             </section>
 
-            {/* =================================================
-                TODAY'S APPOINTMENTS
-            ================================================== */}
+            {/* TODAY'S APPOINTMENTS */}
 
             <section className="dashboard-card appointments-card">
               <div className="dashboard-card-header">
@@ -560,14 +523,10 @@ export default function OperatorDashboardPage() {
               </div>
             </section>
 
-            {/* =================================================
-                BOTTOM CARDS
-            ================================================== */}
+            {/*BOTTOM CARDS */}
 
             <section className="bottom-dashboard-grid">
-              {/* ===============================================
-                  PENDING SESSIONS
-              ================================================ */}
+              {/*  PENDING SESSIONS*/}
 
               <div className="dashboard-card pending-card">
                 <div className="dashboard-card-header">
@@ -613,9 +572,7 @@ export default function OperatorDashboardPage() {
                 </div>
               </div>
 
-              {/* ===============================================
-                  RECENT SESSIONS
-              ================================================ */}
+              {/*RECENT SESSIONS */}
 
               <div className="dashboard-card recent-card">
                 <div className="dashboard-card-header">
@@ -665,9 +622,7 @@ export default function OperatorDashboardPage() {
         </main>
       </div>
 
-      {/* =====================================================
-          NOTIFICATION OVERLAY
-      ====================================================== */}
+      {/* NOTIFICATION OVERLAY */}
 
       <div
         className={
@@ -678,9 +633,7 @@ export default function OperatorDashboardPage() {
         onClick={handleCloseNotifications}
       />
 
-      {/* =====================================================
-          NOTIFICATION DRAWER
-      ====================================================== */}
+      {/*NOTIFICATION DRAWER */}
 
       <aside
         className={

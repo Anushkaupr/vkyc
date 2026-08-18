@@ -36,9 +36,7 @@ select {
 }
 
 
-/* ==========================================================
-   FULL SCREEN PAGE
-========================================================== */
+/*  FULL SCREEN PAGE*/
 
 .operator-dashboard-page {
   width: 100vw;
@@ -52,9 +50,7 @@ select {
 }
 
 
-/* ==========================================================
-   MAIN FULL-SCREEN LAYOUT
-========================================================== */
+/*MAIN FULL-SCREEN LAYOUT */
 
 .operator-dashboard-container {
   width: 100%;
@@ -70,9 +66,7 @@ select {
 }
 
 
-/* ==========================================================
-   SIDEBAR
-========================================================== */
+/* SIDEBAR */
 
 .dashboard-sidebar {
   width: 360px;
@@ -102,9 +96,7 @@ select {
 }
 
 
-/* ==========================================================
-   SIDEBAR BRAND
-========================================================== */
+/* SIDEBAR BRAND */
 
 .sidebar-brand {
   width: 100%;
@@ -131,9 +123,7 @@ select {
   flex-shrink: 0;
 }
 
-/* ==========================================================
-   SIDEBAR MENU
-========================================================== */
+/* SIDEBAR MENU */
 
 .sidebar-menu {
   width: 100%;
@@ -162,7 +152,7 @@ select {
 
   color: #eef4ff;
 
-  /* SAME FONT SIZE FOR ALL MENU ITEMS */
+  
   font-size: 20px;
   font-weight: 700;
 
@@ -187,7 +177,7 @@ select {
 
   color: #ffffff;
 
-  /* SAME SIZE - ONLY BOLDER */
+  
   font-size: 20px;
   font-weight: 800;
 
@@ -196,9 +186,7 @@ select {
 }
 
 
-/* ==========================================================
-   MENU ICON
-========================================================== */
+/*  MENU ICON */
 
 .sidebar-menu-icon {
   width: 36px;
@@ -233,9 +221,7 @@ select {
   white-space: nowrap;
 }
 
-/* ==========================================================
-   LOGOUT
-========================================================== */
+/*LOGOUT */
 
 .sidebar-logout {
   width: 100%;
@@ -280,9 +266,7 @@ select {
 }
 
 
-/* ==========================================================
-   MAIN RIGHT AREA
-========================================================== */
+/* MAIN RIGHT AREA */
 
 .dashboard-main {
   width: 100%;
@@ -300,9 +284,7 @@ select {
 }
 
 
-/* ==========================================================
-   TOP HEADER
-========================================================== */
+/* TOP HEADER */
 
 .dashboard-header {
   width: 100%;
@@ -325,11 +307,6 @@ select {
   z-index: 20;
 }
 
-
-/* ==========================================================
-   HEADER WELCOME
-========================================================== */
-
 .header-welcome {
   display: flex;
   align-items: center;
@@ -349,11 +326,6 @@ select {
   object-fit: contain;
 }
 
-
-/* ==========================================================
-   HEADER ACTIONS
-========================================================== */
-
 .header-actions {
   display: flex;
   align-items: center;
@@ -362,16 +334,10 @@ select {
 }
 
 
-/* ==========================================================
-   OFFICE SELECT
-========================================================== */
+/*  OFFICE SELECT*/
 
 .office-select {
-  /*
-    Keep the dropdown arrow close to the selected text.
-    field-sizing: content makes the select follow the
-    currently selected option instead of the longest option.
-  */
+  
   width: fit-content;
   min-width: 0;
   max-width: max-content;
@@ -379,7 +345,6 @@ select {
 
   height: 48px;
 
-  /* small gap between "Head Office" and the arrow */
   padding: 0 24px 0 0;
 
   flex: 0 0 auto;
@@ -408,11 +373,6 @@ select {
 .office-select:focus {
   outline: none;
 }
-
-
-/* ==========================================================
-   BIGGER NOTIFICATION BUTTON
-========================================================== */
 
 .notification-button {
   width: 60px;
@@ -448,10 +408,6 @@ select {
 }
 
 
-/* ==========================================================
-   NOTIFICATION BADGE
-========================================================== */
-
 .notification-badge {
   min-width: 23px;
   height: 23px;
@@ -479,10 +435,6 @@ select {
 }
 
 
-/* ==========================================================
-   BIGGER OPERATOR AVATAR
-========================================================== */
-
 .operator-avatar {
   width: 70px;
   height: 70px;
@@ -504,10 +456,7 @@ select {
   cursor: pointer;
 }
 
-
-/* ==========================================================
-   DASHBOARD CONTENT
-========================================================== */
+/* DASHBOARD CONTENT */
 
 .dashboard-content {
   width: 100%;
@@ -539,10 +488,7 @@ select {
   border-radius: 10px;
 }
 
-
-/* ==========================================================
-   OVERVIEW
-========================================================== */
+/*  OVERVIEW */
 
 .overview-section {
   margin-bottom: 28px;
@@ -564,11 +510,6 @@ select {
 
   font-size: 17px;
 }
-
-
-/* ==========================================================
-   OVERVIEW CARDS
-========================================================== */
 
 .overview-cards {
   width: 100%;
@@ -656,9 +597,7 @@ select {
 }
 
 
-/* ==========================================================
-   GENERAL DASHBOARD CARD
-========================================================== */
+/*  DASHBOARD CARD*/
 
 .dashboard-card {
   width: 100%;
@@ -670,11 +609,6 @@ select {
   border: 2px solid #e7ebf0;
   border-radius: 14px;
 }
-
-
-/* ==========================================================
-   CARD HEADER
-========================================================== */
 
 .dashboard-card-header {
   width: 100%;
@@ -708,10 +642,7 @@ select {
   cursor: pointer;
 }
 
-
-/* ==========================================================
-   APPOINTMENTS
-========================================================== */
+/* APPOINTMENTS */
 
 .appointments-card {
   margin-bottom: 26px;
@@ -761,10 +692,7 @@ select {
   font-weight: 650;
 }
 
-
-/* ==========================================================
-   BOTTOM GRID
-========================================================== */
+/* BOTTOM GRID*/
 
 .bottom-dashboard-grid {
   width: 100%;
@@ -778,9 +706,7 @@ select {
 }
 
 
-/* ==========================================================
-   SESSION LISTS
-========================================================== */
+/*  SESSION LISTS */
 
 .session-list {
   width: 100%;
@@ -871,9 +797,7 @@ select {
 }
 
 
-/* ==========================================================
-   NOTIFICATION OVERLAY
-========================================================== */
+/* NOTIFICATION OVERLAY */
 
 .notification-overlay {
   width: 100%;
@@ -901,10 +825,6 @@ select {
   visibility: visible;
 }
 
-
-/* ==========================================================
-   NOTIFICATION DRAWER
-========================================================== */
 
 .notification-drawer {
   width: 430px;
@@ -934,10 +854,6 @@ select {
   transform: translateX(0);
 }
 
-
-/* ==========================================================
-   DRAWER HEADER
-========================================================== */
 
 .notification-drawer-header {
   min-height: 105px;
@@ -991,10 +907,7 @@ select {
   background: #e6ebf2;
 }
 
-
-/* ==========================================================
-   NOTIFICATION ACTIONS
-========================================================== */
+/* NOTIFICATION ACTIONS*/
 
 .notification-actions {
   padding: 14px 24px;
@@ -1022,10 +935,7 @@ select {
   text-decoration: underline;
 }
 
-
-/* ==========================================================
-   NOTIFICATION LIST
-========================================================== */
+/* NOTIFICATION LIST */
 
 .notification-list {
   flex: 1;
@@ -1069,10 +979,7 @@ select {
   background: #eaf3ff;
 }
 
-
-/* ==========================================================
-   NOTIFICATION ITEM ICON
-========================================================== */
+/* NOTIFICATION ITEM ICON */
 
 .notification-item-icon {
   width: 44px;
@@ -1096,10 +1003,7 @@ select {
   object-fit: contain;
 }
 
-
-/* ==========================================================
-   NOTIFICATION ITEM CONTENT
-========================================================== */
+/* NOTIFICATION ITEM CONTENT */
 
 .notification-item-content {
   flex: 1;
@@ -1157,75 +1061,3 @@ select {
   font-weight: 500;
 }
 
-
-/* ==========================================================
-   RESPONSIVE - LARGE LAPTOP
-========================================================== */
-
-@media (max-width: 1450px) {
-
-  .operator-dashboard-container {
-    grid-template-columns:
-      330px minmax(0, 1fr);
-  }
-
-  .dashboard-sidebar {
-    width: 330px;
-  }
-
-  .dashboard-content {
-    padding-left: 30px;
-    padding-right: 30px;
-  }
-
-  .overview-cards {
-    gap: 13px;
-  }
-
-  .overview-card {
-    padding: 20px;
-  }
-}
-
-
-/* ==========================================================
-   RESPONSIVE - MEDIUM LAPTOP
-========================================================== */
-
-@media (max-width: 1180px) {
-
-  .operator-dashboard-container {
-    grid-template-columns:
-      300px minmax(0, 1fr);
-  }
-
-  .dashboard-sidebar {
-    width: 300px;
-
-    padding-left: 13px;
-    padding-right: 13px;
-  }
-
-  .sidebar-brand {
-    padding-left: 12px;
-    padding-right: 12px;
-
-    font-size: 22px;
-  }
-
-  .sidebar-menu-item {
-    padding-left: 14px;
-    padding-right: 14px;
-
-    font-size: 18px;
-  }
-
-  .overview-cards {
-    grid-template-columns:
-      repeat(3, minmax(0, 1fr));
-  }
-
-  .bottom-dashboard-grid {
-    grid-template-columns: 1fr;
-  }
-}
